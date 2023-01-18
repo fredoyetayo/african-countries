@@ -1,0 +1,12 @@
+import pandas as pd
+
+data = {'Serial No.': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54],
+        'Country': ['Algeria', 'Egypt', 'Libya', 'Morocco', 'Sudan', 'Tunisia', 'Burundi', 'Comoros', 'Djibouti', 'Eritrea', 'Ethiopia', 'Kenya', 'Madagascar', 'Malawi', 'Mauritius', 'Mozambique', 'Rwanda', 'Somalia', 'South Sudan', 'Tanzania', 'Seychelles', 'Uganda', 'Zambia', 'Zimbabwe', 'Angola', 'Cameroon', 'Central African Republic', 'Chad', 'Botswana', 'Burkina Faso', 'Cabo Verde', 'Congo, The Democratic Republic', 'Congo Republic', 'Cote d’Ivoire', 'Equatorial Guinea', 'Eswatini(Swaziland)', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Lesotho', 'Liberia', 'Mali', 'Mauritania', 'Namibia', 'Niger', 'Nigeria', 'Sao Tome and Principe', 'Senegal', 'Sierra Leone', 'South Africa', 'Togo'],
+        'Capital': ['Algiers', 'Cairo', 'Tripoli', 'Rabat', 'Khartoum', 'Tunis', 'Gitega', 'Moroni', 'Djibouti', 'Asmara', 'Addis Ababa', 'Nairobi', 'Antananarivo', 'Lilongwe', 'Port Louis', 'Maputo', 'Kigali', 'Mogadishu', 'Juba', 'Dodoma', 'Victoria', 'Kampala', 'Lusaka', 'Harare', 'Luanda', 'Yaounde', 'Bangui', 'N’Djamena', 'Gaborone', 'Ouagadougou', 'Praia', 'Kinshasa', 'Brazzaville', 'Yamoussoukro', 'Malabo', 'Mbabane', 'Libreville', 'Banjul', 'Accra', 'Conakry', 'Bissau', 'Maseru', 'Monrovia', 'Bamako', 'Nouakchott', 'Windhoek', 'Niamey', 'Abuja', 'Sao Tome', 'Dakar', 'Free Town', 'Pretoria', 'Lome']}
+
+df = pd.DataFrame(data)
+
+# convert the DataFrame to a JSON object
+json_data = df.to_json()
+
+print(json_data)
